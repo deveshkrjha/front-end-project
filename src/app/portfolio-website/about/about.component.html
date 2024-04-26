@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<div class="about-me-container">
+    <div class="main-content animate__animated animate__fadeInUp">
+        <div class="education-section" *ngIf="showEducation">
+            <div id="skills-section" class="skills-section animate__animated animate__fadeInUp">
+                <p style="font-size: 35px;color:#6b08a6 ; margin-bottom: 30px;">Education</p>
+            </div>
+
+            <p style="font-size: 25px; font-weight: 100;">University Name:  Lovely Professional University</p>
+            <p style="font-size: 25px; font-weight: 300;">Degree:  B.Tech. CSE</p>
+            <p style="font-size: 25px; font-weight: 300;">Graduation Year:  2026</p>
+        </div>
+        <div class="projects-section" *ngIf="showProjects">
+            <div id="skills-section" class="skills-section animate__animated animate__fadeInUp">
+                <p style="font-size: 35px;color:#6b08a6 ; margin-bottom: 30px;">Projects</p>
+            </div>
+
+            <div class="project-card" *ngFor="let project of projects">
+                <h4 style="font-size: 25px;">
+                    {{project.name}}
+                </h4>
+                <p style="font-size: 20px;">
+                    {{project.description}}
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<app-footer></app-footer>

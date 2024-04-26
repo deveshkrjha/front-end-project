@@ -1,0 +1,82 @@
+<app-navbar></app-navbar>
+
+<div class="home-container">
+    <div class="main-content animate__animated animate__fadeInUp">
+
+        <div class="main-content animate__animated animate__fadeInUp">
+            <div class="thumb-container">
+                <img src="../../../assets/joshua-aragon-BMnhuwFYr7w-unsplash.jpg" alt="Profile image" class="thumb-image">
+            </div>
+        </div>
+
+        <div class="text-container">
+            <p>Introduction</p>
+            <p><span style="font-size: 22px; color: black;">Welcome to My Portfolio</span></p>
+            <p>Hello! I'm <span style="font-size: 22px; color: black;">Deep Singh</span>, an innovative <span style="font-size: 22px; color: black;">Web Developer</span> with a wealth of experience spanning <span style="font-size: 22px; color: black;">1 year</span>. My expertise lies in <span style="font-size: 22px; color: black;">Front-end and Back-end</span>, where I combine technical prowess with a flair for creativity to craft exceptional solutions.</p>
+            
+            <p>Over the years, I've had the privilege of working on an array of impactful projects, ranging from <span style="font-size: 22px; color: black;">Weather App</span> to <span style="font-size: 22px; color: black;">E-Commerce App</span>. My approach is characterized by a meticulous attention to detail and a commitment to delivering results that not only meet but exceed expectations.</p>
+
+            <p>I'm thrilled to share my journey and showcase the fruits of my labor. Take a stroll through my portfolio and feel free to reach out if you'd like to collaborate or simply have a chat. Let's transform your visions into reality!</p>
+        </div>
+    </div>
+
+
+<div>
+    <div>
+        <div id="skills-section" class="skills-section animate__animated animate__fadeInUp">
+          <p style="font-size: 25px;color:#6b08a6 ;">My Skills</p>
+        </div>
+        <div class="card-container">
+          <mat-card class="example-card animate__animated animate__fadeInUp" style="height: min-content;">
+            <mat-card-header class="row align-items-center">
+              <p style="color:#6b08a6 ;">Angular</p>
+      
+            </mat-card-header>
+            <img mat-card-image src="../assets/angular.png" alt="Image">
+            <mat-card-content>
+              <p>Helps developers build dynamic, single-page web applications.</p>
+            </mat-card-content>
+            <button (click)="knowMore1()">Know More..</button>
+            <div style="color: black;" [ngClass]="{'visible': showDescription1, 'description': true}">
+              Angular is a powerful and widely adopted front-end framework for building dynamic web applications. Developed and maintained by Google, Angular offers a comprehensive platform for building scalable, efficient, and feature-rich single-page applications (SPAs) and progressive web apps (PWAs).
+            </div>
+          </mat-card>
+      
+          <mat-card class="example-card animate__animated animate__fadeInUp" style="height: min-content;">
+            <mat-card-header class="row align-items-center">
+              <p style="color:#6b08a6 ;">ReactJS</p>
+            </mat-card-header>
+            <img mat-card-image src="../assets/react.png" alt="Image">
+            <mat-card-content>
+              <p>JS library for building user interfaces, particularly for SPA's.</p>
+            </mat-card-content>
+            <button (click)="knowMore2()">Know More..</button>
+            <div style="color: black;" [ngClass]="{'visible': showDescription2, 'description': true}">
+              React is a popular JavaScript library for building user interfaces, developed and maintained by Facebook. Known for its simplicity, performance, and flexibility, React has gained widespread adoption among developers for building modern web applications, single-page applications (SPAs), and user interfaces (UIs).
+            </div>
+          </mat-card>
+      
+          <mat-card class="example-card animate__animated animate__fadeInUp" style="height: min-content;">
+            <mat-card-header class="row align-items-center">
+              <p style="color:#6b08a6 ;">Java</p>
+            </mat-card-header>
+            <img mat-card-image src="../assets/java.png" alt="Image">
+            <mat-card-content>
+              <p>Java is designed to be platform-independent.</p>
+            </mat-card-content>
+            <button (click)="knowMore3()">Know More..</button>
+            <div style="color: black;" [ngClass]="{'visible': showDescription3, 'description': true}">
+              Java is a versatile and widely used programming language known for its simplicity, reliability, and platform independence. Developed by Sun Microsystems (now owned by Oracle Corporation), Java has become one of the most popular programming languages in the world, powering a wide range of applications, from enterprise software and web applications to mobile apps, games, and embedded systems.
+            </div>
+          </mat-card>
+      
+      
+      
+        </div>
+      </div>
+</div>
+
+</div>
+
+
+<app-footer></app-footer>
